@@ -1,0 +1,180 @@
+/* src/styles/LoginPage.css */
+
+.login-page {
+  display: flex;
+  justify-content: center; /* Centraliza a página horizontalmente */
+  align-items: center; /* Centraliza a página verticalmente */
+  min-height: 100vh;
+  background-color: #362ab7; /* Verde do Facebook */
+  padding: 20px;
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+.welcome-section {
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 400px; /* Limita a largura máxima */
+  text-align: left;
+}
+
+/* Texto "Bem-vindo ao Petbook X" */
+.welcome-section h1 {
+  color: #FFFFFF; /* Texto branco */
+  font-size: 31px; /* Tamanho de fonte ajustado para responsividade */
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif; /* Fonte com estilo clássico */
+}
+
+.welcome-section h2 {
+  font-size: 20px; /* Tamanho de fonte ajustado para responsividade */
+  color: #e9f0f5; /* Cor clara para o subtítulo */
+}
+
+.login-section {
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 350px; /* Largura máxima para a seção de login */
+  padding: 40px;
+  background-color: #fff; /* Fundo branco para a seção de login */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex; /* Torna o layout flexível */
+  flex-direction: column; /* Mantém os itens na coluna */
+}
+
+/* Estilo para o formulário de login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos */
+  width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dddfe2;
+  font-size: 16px; /* Tamanho da fonte para responsividade */
+}
+
+/* Estilo para o botão "Entrar" */
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #42b72a; /* Verde do Facebook */
+  color: #FFFFFF; /* Texto em branco */
+  font-size: 18px; /* Aumentando o tamanho da fonte */
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #36a420; /* Verde um pouco mais escuro ao passar o mouse */
+}
+
+/* Estilo específico para o botão "Criar uma nova conta" */
+.create-account-button {
+  margin-top: 20px; /* Margem superior para separar dos outros elementos */
+  display: block; /* Faz com que ocupe toda a largura disponível */
+  text-align: center; /* Centraliza o texto */
+  background-color: #42b72a; /* Verde do Facebook */
+  color: #FFFFFF; /* Texto em branco */
+  font-size: 18px; /* Aumentando o tamanho da fonte */
+  font-weight: bold; /* Peso da fonte em negrito */
+  padding: 15px; /* Aumentando a altura do botão */
+  border-radius: 6px; /* Arredondamento igual */
+  text-decoration: none; /* Sem sublinhado */
+}
+
+.create-account-button:hover {
+  background-color: #36a420; /* Um verde mais claro ao passar o mouse */
+}
+
+.recent-logins {
+  width: 100%;
+  max-width: 350px; /* Largura máxima */
+}
+
+.recent-logins h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.login-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.add-account {
+  background-color: #f0f2f5;
+  color: #1877f2;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.plus-icon {
+  font-size: 24px;
+  color: #1877f2;
+  margin-right: 5px;
+}
+
+/* Ajuste da posição do link "Esqueceu a senha?" */
+.signup-link,
+.forgot-password-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 28px; /* Reduzindo o tamanho da fonte para telas pequenas */
+  }
+
+  .welcome-section h2 {
+    font-size: 18px; /* Reduzindo o tamanho da fonte para telas pequenas */
+  }
+
+  .login-section {
+    padding: 20px; /* Diminuindo o padding para telas menores */
+  }
+
+  .login-form button {
+    font-size: 16px; /* Ajustando o tamanho do botão */
+  }
+  
+}

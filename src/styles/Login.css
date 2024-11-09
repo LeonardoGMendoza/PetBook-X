@@ -1,0 +1,32 @@
+/* src/styles/Login.css */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dddfe2;
+  }
+  
+/* Estilo para o botão "Entrar" */
+.login-form button {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    padding: 15px; /* Aumentando a altura do botão para igualar ao botão de criar conta */
+    background-color: #42b72a; /* Verde do Facebook */
+    color: #FFFFFF; /* Texto em branco */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    font-weight: bold;
+    border-radius: 6px; /* Arredondamento igual ao botão de criar conta */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #36a420; /* Verde um pouco mais escuro ao passar o mouse */
+  }
+  

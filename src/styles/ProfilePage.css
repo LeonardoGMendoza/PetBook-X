@@ -1,0 +1,116 @@
+/* Estilos Gerais */
+.profile-page-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar Esquerda */
+  .sidebar-left {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile h2 {
+    font-size: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .sidebar-menu li:hover {
+    color: #007bff;
+  }
+  
+  /* Área Central */
+  .center-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .post-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .post-box button {
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  .post {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar Direita */
+  .sidebar-right {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .sidebar-right h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contacts-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacts-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
